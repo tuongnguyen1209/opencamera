@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
+    <link rel="stylesheet" href="style.css" />
+</head>
 
-  <body>
+<body>
     <div class="container">
-      <video id="video" width="640px" height="480px" autoplay></video>
-      <button id="chup">chup</button>
-      <canvas id="canvans"></canvas>
-      <img id="hinh" src="" alt="" />
-      <div id="err"></div>
+        <h3 style="text-align: center">Máy ảnh</h3>
+        <div class="box-video">
+            <div><video id="video" width="640px" height="480px" autoplay></video></div>
+        </div>
+        <div class="action">
+            <button id="chup">chup</button>
+            <button>xoay</button>
+        </div>
+        <div class="box-canvas d-none">
+           <div>
+            <canvas id="canvans"></canvas>
+           </div>
+        </div>
+        <div class="box-img d-none">
+            <img id="hinh" src="" alt="" />
+        </div>
+
+        <div id="err">
+            <input type="file" accept="video/*" capture="camera">
+
+        </div>
     </div>
     <script src="script.js"></script>
-  </body>
+</body>
+
 </html>

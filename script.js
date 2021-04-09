@@ -2,6 +2,8 @@
 'use strict';
 const video = document.querySelector('#video');
 const chup = document.querySelector('#chup');
+const boxcv=document.querySelector('.box-canvas');
+const boximg=document.querySelector('.box-img');
 let canvans = document.querySelector('#canvans');
 let contect = canvans.getContext('2d');
 let hinh = document.getElementById('hinh');
@@ -20,6 +22,14 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
     })
 }
 chup.addEventListener('click', () => {
-    contect.drawImage(video, 0, 0, 640, 480);
-    hinh.src = canvans.toDataURL("image/webp");
+    chupHinh()
 })
+
+let chupHinh=()=>{
+    canvans.width = video.videoWidth;
+    canvans.height = video.videoHeight;
+    contect.drawImage(video, 0, 0);
+    hinh.src = canvans.toDataURL("image/webp");
+    boxcv.classList.remove('d-none');
+    boximg.classList.remove('d-none')
+}
