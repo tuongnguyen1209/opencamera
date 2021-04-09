@@ -20,6 +20,6 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
     })
 }
 chup.addEventListener('click', () => {
-    contect.drawImage(video, 0, 0, 320, 150);
+    contect.drawImage(video, 0, 0, 640, 480);
     hinh.src = canvans.toDataURL("image/webp");
 })
