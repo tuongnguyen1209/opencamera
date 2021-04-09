@@ -38,6 +38,6 @@ let chupHinh=()=>{
 
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) 
 {
-    boxvideo.classList.add('d-none');
     didong.classList.remove('d-none')
 }
+
