@@ -1,7 +1,9 @@
 
 'use strict';
 const video = document.querySelector('#video');
+const didong = document.querySelector('#didong');
 const chup = document.querySelector('#chup');
+const boxvideo=document.querySelector('.box-canvas');
 const boxcv=document.querySelector('.box-canvas');
 const boximg=document.querySelector('.box-img');
 let canvans = document.querySelector('#canvans');
@@ -32,4 +34,9 @@ let chupHinh=()=>{
     hinh.src = canvans.toDataURL("image/webp");
     boxcv.classList.remove('d-none');
     boximg.classList.remove('d-none')
+}
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) 
+{
+    boxvideo.classList.add('d-none');
+    didong.classList.remove('d-none')
 }
