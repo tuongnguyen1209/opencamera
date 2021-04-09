@@ -15,13 +15,9 @@ const m_options = {
 }
 
 if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-    navigator.mediaDevices.getUserMedia(m_options).then(stream => {
-        console.log(stream);
-        video.srcObject = stream;
-        video.play()
-    }).catch(err => {
-        alert(err)
-    })
+    
+}else{
+    alert('Khong ho tro')
 }
 chup.addEventListener('click', () => {
     chupHinh()
@@ -38,6 +34,15 @@ let chupHinh=()=>{
 
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) 
 {
+    boxvideo.classList.add('d-none')
     didong.classList.remove('d-none')
+}else{
+    navigator.mediaDevices.getUserMedia(m_options).then(stream => {
+        console.log(stream);
+        video.srcObject = stream;
+        video.play()
+    }).catch(err => {
+        alert(err)
+    })
 }
 
