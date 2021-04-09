@@ -35,6 +35,7 @@ let chupHinh=()=>{
     boxcv.classList.remove('d-none');
     boximg.classList.remove('d-none')
 }
+
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) 
 {
     boxvideo.classList.add('d-none');
