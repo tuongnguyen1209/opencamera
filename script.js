@@ -3,7 +3,7 @@
 const video = document.querySelector('#video');
 const didong = document.querySelector('#didong');
 const chup = document.querySelector('#chup');
-const boxvideo=document.querySelector('.box-canvas');
+const boxvideo=document.querySelector('.box-video');
 const boxcv=document.querySelector('.box-canvas');
 const boximg=document.querySelector('.box-img');
 let canvans = document.querySelector('#canvans');
