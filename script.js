@@ -11,7 +11,7 @@ let contect = canvans.getContext('2d');
 let hinh = document.getElementById('hinh');
 
 const m_options = {
-    video: { width: 640, height: 480 ,facingMode:{exact:'environment '}}
+    video: { width: 640, height: 480 ,facingMode: { exact: "environment" } }
 }
 
 if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
