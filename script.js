@@ -10,9 +10,16 @@ let canvans = document.querySelector('#canvans');
 let contect = canvans.getContext('2d');
 let hinh = document.getElementById('hinh');
 
-const m_options = {
-    video: { width: 640, height: 480 ,facingMode: { exact: "environment" } }
+let m_options = {
+    video: { width: 640, height: 480 }
 }
+// environment
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+    m_options = {
+        video: { width: 640, height: 480 ,facingMode: { exact: "environment" } }
+    }
+}
+
 
 if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
 
