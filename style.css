@@ -11,12 +11,13 @@
 .box-video{
     width: 100%;
 }
+.box-video,.box-canvas,
 #video,
 #canvans , .box-video>div,.box-canvas>div{
     width: 480px;
     height: 360px;
     margin: auto;
-    margin-top: 30px;
+    
 }
 .action{
     margin: 30px;
