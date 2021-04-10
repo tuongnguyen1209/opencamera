@@ -11,9 +11,9 @@
 .box-video{
     width: 100%;
 }
-.box-video,.box-canvas,
+.box-video,
 #video,
-#canvans , .box-video>div,.box-canvas>div{
+.box-video>div{
     width: 480px;
     height: 360px;
     margin: auto;
